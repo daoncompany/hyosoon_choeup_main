@@ -468,11 +468,14 @@
 
     <!-- 첫방문 전용 -->
     <div class="conditional" id="firstVisitSection">
+      <!-- 체크리스트(토글형) 비활성화
       <div class="card">
         <div class="section-title">체크리스트 <span class="badge">첫 방문</span></div>
         <p class="section-sub">해당 사항에 체크해주세요.</p>
         <div id="checklistWrap"></div>
       </div>
+
+      -->
 
       <div class="card">
         <div class="section-title">서비스 이용 동의</div>
@@ -660,6 +663,7 @@
     sigWrapper.classList.remove('err');
   });
 
+  /* 체크리스트(토글형) 비활성화
   // ----------------------------------------------------
   // 체크리스트 생성
   // ----------------------------------------------------
@@ -688,6 +692,8 @@
       '</div>';
     checklistWrap.appendChild(row);
   });
+
+  */
 
   // 방문경로 - 기타 입력
   var routeOtherRadio = document.getElementById('routeOtherRadio');
